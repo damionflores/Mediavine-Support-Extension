@@ -1,0 +1,127 @@
+
+body {
+    font-size: 14px;
+    font-family: monospace;
+}
+
+body, h2, h3 {
+    margin: 0;
+}
+
+#popup-header {
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background-color: #41a5a9;
+    text-align: center;
+}
+
+#site-title {
+    margin: 0;
+}
+
+#main-container {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    border-bottom: solid 1px lightgray;
+    color: #41a5a9;
+}
+
+.section-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#active-plugins ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: decimal;
+}
+
+#active-plugins ul li {
+    margin: 15px;
+    margin-left: 30px;
+    padding: 5px;
+    border: solid 2px lightgray;
+    width: 33%;
+    word-break: break-word;
+    cursor: pointer;
+}
+
+#search {
+    display: block;
+    border-radius: 3px;
+    border: solid 1px lightgrey;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.selected-item{
+    background-color: #41a5a9;
+    border: 2px solid rgb(65, 165, 169) !important;
+    -webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+}
+
+#clipboard-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    background: #e0e0e0;
+    border-style: none;
+    -webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+    font-family: monospace;
+}
+
+@keyframes copiedAnimation {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: .75;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .25;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.copied-text {
+    animation-name: copiedAnimation;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 459px) {
+    #active-plugins ul li {
+        margin-left: 30px;
+        width: 100%;
+        word-break: break-word;
+    }
+    #active-plugins ul {
+        padding-left: 0;
+    }
+}

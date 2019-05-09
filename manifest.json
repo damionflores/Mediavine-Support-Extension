@@ -1,0 +1,40 @@
+  {
+    "name": "Mediavine Extension",
+    "version": "0.1.94",
+    "description": "Quick and painless Mediavine extentsion for employees.",
+    "permissions": [
+      "activeTab",
+      "contextMenus",
+      "declarativeContent",
+      "storage"
+    ],
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": false
+    },
+    "externally_connectable": {
+      "matches": [
+        "*://nncmjgalinaiafhajiejococdpghmnpk/*"
+      ]
+    },
+    "web_accessible_resources": [
+      "images/*.png",
+      "style/double-rainbow.css",
+      "script/double-rainbow.js",
+      "script/main.js",
+      "templates/*",
+      "script.js"
+    ],
+    "icons": {
+      "16": "mv-logo-icon.png",
+      "48": "mv-logo-icon.png",
+      "128": "mv-logo-icon.png"
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "manifest_version": 2
+  }

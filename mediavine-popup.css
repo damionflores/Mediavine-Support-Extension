@@ -1,0 +1,144 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 200px;
+}
+body p {
+    font-size: 14px;
+}
+#conflicts-wrapper {
+    display: none;
+    width: 175px;
+    height: auto;   
+}
+#scripts-wrapper {
+    display: none;
+}
+#cmp-wrapper {
+    display: none;
+}
+#version {
+    color: #41a5a9;
+    float: right;
+    margin: unset;
+    position: absolute;
+    right: 5px;
+}
+#title-text {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px #eeeeea solid;
+	color: black;
+}
+#menu-items {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    min-width: 150px;
+}
+.popup-option {
+    padding:10px;
+    background-color: white;
+    border-bottom: 1px #eeeeea solid;
+    cursor: auto !important;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align: left;
+    text-align: left;
+    letter-spacing: .25px;
+    font-size: 12px;
+}
+.option-popup {
+    cursor: auto;
+}
+.popup-option:hover {
+	background-color: rgba(192,192,192,0.3);
+	cursor: auto;
+}
+#version-wrapper {
+    margin-left: 10px;
+    border-left: solid 2px #41a5a9;
+    padding-left: 10px;
+}
+#mediavine-logo {
+	width: 100px;
+}
+#site-id-wrapper p {
+    text-transform: lowercase;
+}
+
+#adstxt-wrapper {
+    text-transform: initial;
+    padding-top: 10px;
+    border-top: 1px #eeeeea solid;
+    display: none;
+}
+#adstxt-btn {
+    background: #41a5a9;
+}
+#adstxt-open-btn {
+    background: white;
+    display: none;
+    color: #41a5a9;
+}
+.adstxt:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.adstxt {
+    background-color: #41a5a9;
+    color: white;
+    border: 1px solid;
+    margin: 0 auto;
+    display: block;
+    font-size: initial;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#adstxt-status-light {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 90px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#redirected-wrapper {
+    display: none;
+    text-align: center;
+}
+#redirected-title {
+    text-align: center;
+}
+#steps-wrapper {
+    margin-top: 10px;
+}
+#steps-wrapper h3 {
+    display: none;
+}
+#steps-subwrapper {
+    display: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: solid 2px #ff0000ba;;
+}
+#steps-subwrapper p {
+    color: #ff0000ba;
+}
+#check-steps-btn {
+    display: none;
+    background: #41a5a9;
+}
+#thumb-up {
+    color: #41a5a9 !important;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+#builder-wrapper, #theme-wrapper {
+    display: none;
+}
